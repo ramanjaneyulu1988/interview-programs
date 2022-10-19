@@ -5,7 +5,7 @@ public class AnagramExample {
 	public static void main(String[] args) {
 
 		String s1 = "abc";
-		String s2 = "cba";
+		String s2 = "acb";
 		
 		boolean b = isAnagram(s1, s2);
 		if(b)
@@ -27,11 +27,12 @@ public class AnagramExample {
 			{
 				if(s2.contains(""+s1.charAt(i)))
 				{
-					return true;
+					b = true;
 				}
 				else
 				{
-					return b;
+					b = false;
+					break;
 				}
 			}
 		}
