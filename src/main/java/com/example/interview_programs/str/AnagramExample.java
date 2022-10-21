@@ -14,7 +14,7 @@ public class AnagramExample {
 		}
 		else
 		{
-			System.out.println("Give Strigns are not anagram");
+			System.out.println("Given Strigns are not anagram");
 		}
 	}
 
@@ -36,6 +36,7 @@ public class AnagramExample {
 				}
 			}
 		}
+		
 		return b;
 	}
 }

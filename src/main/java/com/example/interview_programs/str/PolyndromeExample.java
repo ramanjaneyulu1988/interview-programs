@@ -4,15 +4,15 @@ public class PolyndromeExample {
 
 	public static void main(String[] args) {
 		
-		String str = "aba";
-		boolean b = isPolindrome(str);
+		String str = "haaah";
+		boolean b = isPolindrome1(str);
 		if(b)
 		{
-			System.out.println("Given String is Polindrome");
+			System.out.println(str+" is Polindrome");
 		}
 		else
 		{
-			System.out.println("Given String is not Polindrome");
+			System.out.println(str+" is not Polindrome");
 		}
 	}
 	
@@ -23,6 +23,20 @@ public class PolyndromeExample {
 		{
 			reverse = reverse.concat(""+str.charAt(i));
 		}
+		
+		if(str.equals(reverse))
+		{
+			return true;
+		}
+		
+		return false;
+	}
+	
+	public static boolean isPolindrome1(String str)
+	{
+		StringBuilder sb = new StringBuilder(str);
+		sb.reverse();
+		String reverse = sb.toString();
 		
 		if(str.equals(reverse))
 		{

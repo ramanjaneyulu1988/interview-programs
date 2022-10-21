@@ -2,9 +2,9 @@ package com.example.interview_programs;
 
 public class EvenOrOddNumberExample {
 
-	public static void main(String[] args) {
-		
-		int number = 41;
+	public static void main(String[] args) 
+	{
+		int number = 60;
 		findGivenNumberIsEvenOrOdd(number);
 	}
 	
@@ -12,11 +12,11 @@ public class EvenOrOddNumberExample {
 	{
 		if(number%2 == 0)
 		{
-			System.out.println("Given number is even");
+			System.out.println(number+" number is even");
 		}
 		else
 		{
-			System.out.println("Given number is odd");
+			System.out.println(number+" number is odd");
 		}
 	}
 }
